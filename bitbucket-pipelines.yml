@@ -1,0 +1,31 @@
+# This is a sample build configuration for PHP. (mod by Theerayooth Kosin)
+# Check our guides at https://confluence.atlassian.com/x/VYk8Lw for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+# Set up your SonarQube server or use public server before setting up the pipeline.
+
+# Uncomment below to use SonarQube image 
+# image: sonarqube:latest
+
+# Choose Atlassion image
+image: atlassian/default-image:latest
+
+# Go with pipeline
+pipelines:
+
+  # any brance, https://confluence.atlassian.com/bitbucket/branch-workflows-in-bitbucket-pipelines-856697482.html
+  default:
+    - step:
+        name: Scanner SonarQube
+        script: 
+          - apt-get --yes --force-yes update
+          - apt-get --yes --force-yes install unzip curl php5-cli php-crypt-blowfish php5-mcrypt mcrypt git
+          - php -v
+          - php -m
+          - curl --insecure -OL https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.2.0.1227-linux.zip
+          - unzip sonar-scanner-cli-3.2.0.1227-linux.zip
+          - ls -la sonar-scanner-3.2.0.1227-linux
+          - chmod +x sonar-scanner-3.2.0.1227-linux/bin/sonar-scanner
+          - sonar-scanner-3.2.0.1227-linux/bin/sonar-scanner -Dsonar.exclusions=sonar-scanner-cli-3.2.0.1227-linux.zip,sonar-scanner-3.2.0.1227-linux/**/* -Dsonar.login=a7f46e82509e4634d53f4c3de5894e4fb1ca1f83 -Dsonar.projectKey=GerenciadorProjetos -Dsonar.projectName=GerenciadorProjetos -Dsonar.projectVersion=1.0 -Dsonar.sources=.  -Dsonar.host.url=http://35.199.117.101:9000 -Dsonar.sourceEncoding=UTF-8 -Dsonar.analysis.mode=publish -Dsonar.java.binaries=.
+          - echo "http://35.199.117.101:9000/dashboard/index/GerenciadorProjeto"

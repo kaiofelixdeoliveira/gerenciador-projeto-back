@@ -1,0 +1,56 @@
+2019-08-06 23:17:16.230 [apm-server-healthcheck] INFO co.elastic.apm.agent.report.ApmServerHealthChecker - Elastic APM server is available: {  "build_date": "2019-05-23T12:59:32Z",  "build_sha": "410bf33fa1b67fa5bd02a388de17d0e30ec031da",  "version": "7.1.1"}
+2019-08-06 23:17:16.346 [main] INFO co.elastic.apm.agent.configuration.StartupInfo - Starting Elastic APM 1.7.0 as GerenciadorProjeto on Java 1.8.0_222 (Private Build) Linux 5.0.0-23-generic
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.3.RELEASE)
+
+2019-08-06 23:17:41.321  INFO 11345 --- [           main] c.e.api.GerenciadorProjetoApplication    : Starting GerenciadorProjetoApplication v0.0.1-SNAPSHOT on mr-robot with PID 11345 (/root/apm-spring-boot/GerenciadorProjeto-0.0.1-SNAPSHOT.jar started by root in /root/apm-spring-boot)
+2019-08-06 23:17:41.346  INFO 11345 --- [           main] c.e.api.GerenciadorProjetoApplication    : No active profile set, falling back to default profiles: default
+2019-08-06 23:18:01.115  INFO 11345 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-06 23:18:02.933  INFO 11345 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1699ms. Found 10 repository interfaces.
+2019-08-06 23:18:12.202  INFO 11345 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6fc12795] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-06 23:18:12.865  INFO 11345 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$86eefcf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-06 23:18:13.013  INFO 11345 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-06 23:18:13.049  INFO 11345 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@aeab9a1' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-06 23:18:13.093  INFO 11345 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$2d439281] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-06 23:18:13.175  INFO 11345 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-06 23:18:19.073  INFO 11345 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-06 23:18:19.718  INFO 11345 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-06 23:18:19.724  INFO 11345 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-08-06 23:18:19.997  INFO 11345 --- [           main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2019-08-06 23:18:21.553  INFO 11345 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-06 23:18:21.554  INFO 11345 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 38433 ms
+2019-08-06 23:18:26.025  INFO 11345 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-06 23:18:32.746  INFO 11345 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-06 23:18:34.635  INFO 11345 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-08-06 23:18:36.473  INFO 11345 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.1.Final}
+2019-08-06 23:18:39.852  INFO 11345 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-08-06 23:18:44.919  INFO 11345 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-08-06 23:19:03.831  INFO 11345 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-08-06 23:19:03.847  INFO 11345 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-06 23:19:23.119  WARN 11345 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-06 23:19:32.534  INFO 11345 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77bb48d5, org.springframework.security.web.context.SecurityContextPersistenceFilter@75d4a80f, org.springframework.security.web.header.HeaderWriterFilter@4996c99, org.springframework.security.web.authentication.logout.LogoutFilter@6cf0a747, com.kingoftech.api.security.JwtAuthenticationTokenFilter@4cdb8504, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ccf91df, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2370ac7a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@181d8899, org.springframework.security.web.session.SessionManagementFilter@315f09ef, org.springframework.security.web.access.ExceptionTranslationFilter@32130e61, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3d96fa9e]
+2019-08-06 23:19:39.567  INFO 11345 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-06 23:19:43.074  WARN 11345 --- [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-08-06 23:19:51.402  INFO 11345 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-08-06 23:19:51.791  INFO 11345 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-08-06 23:19:52.000  INFO 11345 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-06 23:20:01.238  INFO 11345 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-06 23:20:01.279  INFO 11345 --- [           main] c.e.api.GerenciadorProjetoApplication    : Started GerenciadorProjetoApplication in 151.364 seconds (JVM running for 170.331)
+2019-08-06 23:25:08.959 [apm-reporter] INFO co.elastic.apm.agent.report.IntakeV2ReportingEventHandler - Backing off for 0 seconds (+/-10%)
+2019-08-06 23:25:10.823 [apm-reporter] ERROR co.elastic.apm.agent.report.IntakeV2ReportingEventHandler - Error sending data to APM server: Read timed out, response code is -1
+2019-08-06 23:25:10.825 [apm-reporter] WARN co.elastic.apm.agent.report.IntakeV2ReportingEventHandler - null
+2019-08-06 23:26:57.873  INFO 11345 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-06 23:26:57.903  INFO 11345 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-06 23:26:58.321  INFO 11345 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 418 ms
+2019-08-06 23:28:01.544 [apm-reporter] INFO co.elastic.apm.agent.report.IntakeV2ReportingEventHandler - Backing off for 0 seconds (+/-10%)
+2019-08-06 23:28:01.544 [apm-reporter] ERROR co.elastic.apm.agent.report.IntakeV2ReportingEventHandler - Error sending data to APM server: Read timed out, response code is -1
+2019-08-06 23:28:01.544 [apm-reporter] WARN co.elastic.apm.agent.report.IntakeV2ReportingEventHandler - null
+2019-08-06 23:29:18.295 [apm-reporter] INFO co.elastic.apm.agent.report.IntakeV2ReportingEventHandler - Backing off for 0 seconds (+/-10%)
+2019-08-06 23:29:24.751 [apm-reporter] ERROR co.elastic.apm.agent.report.IntakeV2ReportingEventHandler - Error sending data to APM server: Read timed out, response code is -1
+2019-08-06 23:29:24.751 [apm-reporter] WARN co.elastic.apm.agent.report.IntakeV2ReportingEventHandler - null
